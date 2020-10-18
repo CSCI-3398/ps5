@@ -51,7 +51,7 @@ Record someone saying "yes" and "no". Convert the two wav files to MFCC feature 
 **Q9: Were the distances larger than the ones generated using the files I provided, which were made using the same speaker? Why do you think this might be?**
 
 
-## Bonus (!)
+## Part 3: Bonus (!)
 When developing a speaker-independent template-matching system, it might be helpful to have multiple templates and to combine them into a single template that's a sort of average of all of the templates for a particular word. To do this, you would need to keep track, for each frame in a given template, of the frame in the other template that was the best match. In other words, when you picked the matrix cell with the minimum distance in your min function, which cell did you pick? 
 
 An easy way to implement this is to create a second matrix that you fill in as you fill in your distance matrix. Each cell will simply store the coordinates (the i and j value) of the cell that contained the minimum distance leading to that cell. These pointers back to the preceding cell are called back pointers.  
