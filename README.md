@@ -38,7 +38,7 @@ python3 dtw.py mystery5.txt
 
 The normalized distance between mystery5.txt and "no" is 64.253
 The normalized distance between mystery5.txt and "yes" is 57.092
-mystery5.txt is "no"
+mystery5.txt is "yes"
 ```
 
 ## Part 2: Testing for speaker independence
