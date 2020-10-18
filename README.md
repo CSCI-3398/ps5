@@ -31,7 +31,7 @@ Use the `validate.txt` files to make sure you're getting the right answers: `yes
 * The program should take one of the `validate` or `mystery` files as a command line argument. It should read in the template files without having to supply them as arguments.
 * It should print out (1) the normalized distances for *yes* and *no* (i.e., the distance divided by the number of franes in the template); and (2) which word the file is predicted to be using these distances (i.e., the template that gave the smaller nornalized distance).
 
-Here is an example run:
+Here is an example run on an imaginary sample file, `mystery5.txt`:
 
 ```
 python3 dtw.py mystery5.txt
