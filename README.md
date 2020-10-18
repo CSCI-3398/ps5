@@ -22,11 +22,12 @@ The `.wav` files are recordings of me saying the word indicated in the file name
 Each line of a `.txt` file contains the features for one frame of the corresponding `.wav` file. There are 13 features per line, separated by space: the first 12 MFCCs and the overall energy for that frame. These are real MFCCs, which I extracted using [this code](https://github.com/jameslyons/python_speech_features), which is [described in detail here](http://practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/). Some of you used this code in the hackathon, so it might be familiar.
 
 ## Part 1: Implementing DTW
-**Using Python 3.7 or higher**, implement the dynamic time warping algorithm described in the lecture slides using  Euclidean distance to calculate the difference between the feature vectors in the `.txt` files. (You can calculate this yourself or use [scipy]( https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.spatial.distance.euclidean.html).)
+**Using Python 3.7 or higher**, implement the dynamic time warping algorithm described in the lecture slides using Euclidean distance to calculate the difference between the feature vectors in the `.txt` files. (You can calculate this yourself or use [scipy]( https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.spatial.distance.euclidean.html).)
 
 Use the `validate.txt` files to make sure you're getting the right answers: `yes_validate.txt` should result in a lower final distance value when compared with `yes_template.txt` than with `no_template.txt`; `no_validate.txt` should result in a lower final distance value when compared with `no_template.txt` than with `yes_template.txt`. 
 
 ### Specs (Important!)
+* Your program should be no more than 60 lines of actual code.
 * Name your program `dtw.py`.
 * The program should take one of the `validate` or `mystery` files as a command line argument. It should read in the template files without having to supply them as arguments.
 * It should print out (1) the normalized distances for *yes* and *no* (i.e., the distance divided by the number of franes in the template); and (2) which word the file is predicted to be using these distances (i.e., the template that gave the smaller nornalized distance).
