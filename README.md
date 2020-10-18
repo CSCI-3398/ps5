@@ -42,13 +42,13 @@ mystery5.txt is "yes"
 ```
 
 ## Part 2: Testing for speaker independence
-Record someone saying "yes" and "no". Convert the two wav files to MFCC feature vectors using the python code linked to above. Just download the code from github, and run example.py with the following modifications: (1) point to your wav files instead of file.wav; and (2) print out each sublist in mfcc_feat rather than the first two sublists of fbank_feat.
+Record someone saying *yes* and *no*. Convert the two `.wav.` files to MFCC feature vectors using the python code linked to above. Just download the code from github, and run `example.py` with the following modifications: (1) point to your `.wav` files instead of `file.wav`; and (2) print out each sublist in `mfcc_feat` rather than the first two sublists of `fbank_feat`.
 
 ### Answer the following questions in a pdf
 
 **Q1: For each recording, which template gave the lowest distance? Were these results correct?***
 
-**Q9: Were the distances larger than the ones generated using the files I provided, which were made using the same speaker? Why do you think this might be?**
+**Q2: Were the distances larger than the ones generated using the files I provided, which were made using the same speaker? If they are larger, why do you think this might be?**
 
 
 ## Part 3: Bonus (!)
